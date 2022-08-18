@@ -1,4 +1,6 @@
+import { Accordion, Button } from 'react-bootstrap'
 import Card from 'react-bootstrap/Card'
+import { Link } from 'react-router-dom'
 
 const MovieDetails = ({ movie }) => {
 	return (
@@ -27,6 +29,28 @@ const MovieDetails = ({ movie }) => {
 							{movie.overview} 
 						</div>
 					</Card.Text>
+					
+					<Accordion>
+						<Accordion.Item eventKey="0">
+							<Accordion.Header>Click to see all featuring actors</Accordion.Header>
+							{movie.credits.cast.map(actor => (
+								<Accordion.Body key={actor.id}>
+									<span className="fw-bold"> 
+										{actor.name} 
+									</span> as {actor.character} 
+									<div>
+									<Button 
+										size="sm"
+										as={Link}
+										to={`/actor/${actor.id}`}
+										variant="primary">
+										Read more
+									</Button>
+									</div>
+								</Accordion.Body>
+							))}
+						</Accordion.Item>
+					</Accordion>
 				</Card.Body>
 			</Card>
 		</>
