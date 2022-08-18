@@ -1,4 +1,5 @@
 import { Routes, Route } from 'react-router-dom'
+import { ReactQueryDevtools } from 'react-query/devtools'
 import Navigation from './components/Navigation'
 import HomePage from './pages/HomePage'
 import CurrentMovies from './pages/CurrentMovies'
@@ -19,6 +20,8 @@ function App() {
 				<Route path="/toplist" element={<Toplist />} />
 				<Route path="*" element={<NotFound />} />
 			</Routes>
+
+			<ReactQueryDevtools />
 		</div>
 	)
 }
