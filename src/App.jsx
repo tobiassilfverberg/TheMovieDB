@@ -1,7 +1,7 @@
 import { Routes, Route } from 'react-router-dom'
 import { ReactQueryDevtools } from 'react-query/devtools'
 import Navigation from './components/Navigation'
-import MovieDetails from './components/MovieDetails'
+import MovieDetails from './pages/MovieDetailsPage'
 import HomePage from './pages/HomePage'
 import CurrentMovies from './pages/CurrentMovies'
 import PopularMovies from './pages/PopularMovies'
