@@ -8,9 +8,9 @@ const getCurrentMovies = async () => {
 	return await axios.get(`movie/now_playing?api_key=${API_KEY}`)
 }
 
-// Get one movie 
+// Get one movie with details and actors
 const getMovie = async (id) => {
-	return await axios.get(`/movie/${id}?api_key=${API_KEY}`)
+	return await axios.get(`/movie/${id}?api_key=${API_KEY}&append_to_response=credits`)
 }
 
 const exports = {
