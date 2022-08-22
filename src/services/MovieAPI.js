@@ -15,7 +15,7 @@ const getMovie = async (id) => {
 
 // Get one actor with id
 const getActor = async (id) => {
-	return await axios.get(`/person/${id}/combined_credits?api_key=${API_KEY}`)
+	return await axios.get(`/person/${id}?api_key=${API_KEY}&append_to_response=combined_credits`)
 }
 
 const exports = {
