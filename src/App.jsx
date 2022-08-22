@@ -1,6 +1,7 @@
 import { Routes, Route } from 'react-router-dom'
 import { ReactQueryDevtools } from 'react-query/devtools'
 import Navigation from './components/Navigation'
+import ActorPage from './pages/ActorPage'
 import MovieDetails from './pages/MovieDetailsPage'
 import HomePage from './pages/HomePage'
 import CurrentMovies from './pages/CurrentMovies'
@@ -20,6 +21,7 @@ function App() {
 				<Route path="/popular" element={<PopularMovies />} />
 				<Route path="/toplist" element={<Toplist />} />
 				<Route path="/movie/:id" element={<MovieDetails />} />
+				<Route path="/actor/:id" element={<ActorPage />} />
 				<Route path="*" element={<NotFound />} />
 			</Routes>
 
