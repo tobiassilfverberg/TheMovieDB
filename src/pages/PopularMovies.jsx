@@ -6,7 +6,7 @@ const PopularMovies = () => {
 	const { data, isError, error, isLoading } = usePopularMovies()
 
 	return (
-		<Container className="py-3">
+		<Container className="py-3 text-center">
 			
 			{isError && error.message}
 
@@ -15,7 +15,10 @@ const PopularMovies = () => {
 			)}
 
 			{data && (
-				<MovieInfoCard movies={data} /> 
+				<>
+					<h1>Popular movies</h1>
+					<MovieInfoCard movies={data} /> 
+				</>
 			)}
 
 		</Container>

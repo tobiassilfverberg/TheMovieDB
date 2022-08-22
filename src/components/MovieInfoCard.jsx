@@ -6,8 +6,6 @@ import { Link } from 'react-router-dom'
 const MovieInfoCard = ({ movies }) => {
 	return (
 		<Container className="py-3 text-center">	
-			<h1>Currently trending movies:</h1>
-
 			{movies.data.results.map((movie) => (
 				<Card key={movie.id} className="mb-3">
 					<Card.Img variant="top" src={`https://image.tmdb.org/t/p/w400${movie.poster_path}`} />

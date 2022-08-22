@@ -6,7 +6,7 @@ const CurrentMovies = () => {
 	const { data, isError, error, isLoading } = useCurrentMovies()
 
 	return (
-		<Container className="py-3">
+		<Container className="py-3 text-center">
 			
 			{isError && error.message}
 
@@ -15,7 +15,10 @@ const CurrentMovies = () => {
 			)}
 
 			{data && (
-				<MovieInfoCard movies={data} /> 
+				<>
+					<h1>Currently trending movies</h1>
+					<MovieInfoCard movies={data} /> 
+				</>
 			)}
 
 		</Container>
