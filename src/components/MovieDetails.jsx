@@ -32,7 +32,8 @@ const MovieDetails = ({ movie }) => {
 					
 					<Accordion>
 						<Accordion.Item eventKey="0">
-							<Accordion.Header>Click to see all featuring actors</Accordion.Header>
+							<Accordion.Header>Click to see all featuring actors 
+								({movie.credits.cast.length})</Accordion.Header>
 							{movie.credits.cast.map(actor => (
 								<Accordion.Body key={actor.id}>
 									<span className="fw-bold"> 
