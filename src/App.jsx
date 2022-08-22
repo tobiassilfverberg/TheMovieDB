@@ -6,7 +6,7 @@ import MovieDetails from './pages/MovieDetailsPage'
 import HomePage from './pages/HomePage'
 import CurrentMovies from './pages/CurrentMovies'
 import PopularMovies from './pages/PopularMovies'
-import Toplist from './pages/Toplist'
+import TopRatedMovies from './pages/TopRatedMovies'
 import NotFound from './pages/NotFound'
 import './assets/scss/App.scss'
 
@@ -19,7 +19,7 @@ function App() {
 				<Route path="/" element={<HomePage />} />
 				<Route path="/current" element={<CurrentMovies />} />
 				<Route path="/popular" element={<PopularMovies />} />
-				<Route path="/toplist" element={<Toplist />} />
+				<Route path="/toplist" element={<TopRatedMovies />} />
 				<Route path="/movie/:id" element={<MovieDetails />} />
 				<Route path="/actor/:id" element={<ActorPage />} />
 				<Route path="*" element={<NotFound />} />
