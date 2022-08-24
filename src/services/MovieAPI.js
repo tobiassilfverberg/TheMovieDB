@@ -28,12 +28,24 @@ const getActor = async (id) => {
 	return await axios.get(`/person/${id}?api_key=${API_KEY}&append_to_response=combined_credits`)
 }
 
+// Get all genres
+const getGenres = async () => {
+	return await axios.get(`/genre/movie/list?api_key=${API_KEY}`)
+}
+
+// Get one genre
+const getGenre = async (genre) => {
+	return await axios.get(`/discover/movie?api_key=${API_KEY}&with_genres=${genre}`)
+}
+
 const exports = {
 	getCurrentMovies,
 	getPopularMovies,
 	getTopRatedMovies, 
 	getMovie,
 	getActor,
+	getGenres,
+	getGenre,
 }
 
 export default exports
