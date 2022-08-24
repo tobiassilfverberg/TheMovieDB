@@ -9,8 +9,7 @@ const MovieDetails = ({ movie }) => {
 			<h5>{movie.tagline}</h5>
 			<Card key={movie.id} className="mb-3">
 				<Card.Img variant="top" src={`https://image.tmdb.org/t/p/w400${movie.poster_path}`} />
-				<Card.Body>
-					<Card.Text> 
+				<Card.Body> 
 						<div>
 							<span className="fw-bold"> Released: </span>  {movie.release_date}
 						</div>
@@ -28,7 +27,6 @@ const MovieDetails = ({ movie }) => {
 						<div>
 							{movie.overview} 
 						</div>
-					</Card.Text>
 					
 					<Accordion>
 						<Accordion.Item eventKey="0">

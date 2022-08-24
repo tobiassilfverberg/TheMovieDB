@@ -11,12 +11,11 @@ const MovieInfoCard = ({ movies }) => {
 					<Card.Img variant="top" src={`https://image.tmdb.org/t/p/w400${movie.poster_path}`} />
 					<Card.Body>
 						<Card.Title> {movie.original_title} </Card.Title>
-						
 							<div>
-								<span className="fw-bold"> Released: </span>  {movie.release_date}
+								<span className="fw-bold"> Released: </span> {movie.release_date}
 							</div>
 							<div>
-								<span className="fw-bold"> Average score: </span>  {movie.vote_average}
+								<span className="fw-bold"> Average score: </span> {movie.vote_average}
 							</div>
 						
 						<Button 

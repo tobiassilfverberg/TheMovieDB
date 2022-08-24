@@ -11,14 +11,12 @@ const ActorDetails = ({ actor }) => {
 				</Card.Header>
 				<Card.Img variant="top" src={`https://image.tmdb.org/t/p/w400${actor.profile_path}`} />
 				<Card.Body>
-					<Card.Text> 
 						<div>
 							<span className="fw-bold"> Born: </span>  {actor.birthday}
 						</div>
 						<div>
 							{actor.biography} 
 						</div>
-					</Card.Text>
 					
 					<Accordion>
 						<Accordion.Item eventKey="0">
