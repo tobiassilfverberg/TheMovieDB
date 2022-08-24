@@ -23,5 +23,3 @@ const GenreList = ({ data }) => {
 }
 
 export default GenreList
-
-// 
