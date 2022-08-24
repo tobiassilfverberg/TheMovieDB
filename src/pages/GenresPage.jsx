@@ -16,7 +16,7 @@ const GenresPage = () => {
 			{data && (
 				<>
 					<h1>Find movies by genre</h1>
-					<GenreList data={data} /> 
+					<GenreList data={data.data} /> 
 				</>
 			)}
 		</Container>

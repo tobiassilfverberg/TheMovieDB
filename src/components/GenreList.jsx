@@ -9,10 +9,10 @@ const GenreList = ({ data }) => {
 			</Dropdown.Toggle>
 
 			<Dropdown.Menu variant="dark">
-				{data.data.genres.map(genre => (
+				{data.genres.map(genre => (
 					<Dropdown.Item 
 						as={Link} 
-						to={`/genre/${genre.id}`}
+						to={`/genres/${genre.id}`}
 						key={genre.id}> 
 						{genre.name} 
 					</Dropdown.Item>
