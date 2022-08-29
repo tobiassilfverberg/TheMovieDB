@@ -34,8 +34,8 @@ const getGenres = async () => {
 }
 
 // Get one genre
-const getGenre = async (genre) => {
-	return await axios.get(`/discover/movie?api_key=${API_KEY}&with_genres=${genre}`)
+const getGenre = async (genre, page) => {
+	return await axios.get(`/discover/movie?api_key=${API_KEY}&with_genres=${genre}&page=${page}`)
 }
 
 const exports = {
