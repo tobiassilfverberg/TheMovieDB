@@ -30,7 +30,7 @@ const MovieDetailsPage = () => {
 
 			{data && (
 				<Container>
-					<h2>{title.name}</h2>
+					{title && (<h2>{title.name}</h2>)}
 					<Pagination setSearchParams={setSearchParams} page={page} />
 					<MovieInfoCard movies={data} />
 				</Container>
