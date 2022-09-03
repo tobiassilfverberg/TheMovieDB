@@ -8,6 +8,7 @@ const Pagination = ({ setSearchParams, page }) => {
 					// disabled={!data.previous}
 					variant="primary"
 					size="sm"
+					disabled={page <= 1}
 					onClick={() => {setSearchParams({ page: page - 1})}}
 				>
 					←
